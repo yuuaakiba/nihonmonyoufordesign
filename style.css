@@ -294,8 +294,9 @@ p{
 }
 
 .content_content{
-    padding: 20px 0 40px;
+    padding: 10px 0;
     margin-bottom: 30px;
+    transition: 0.1s
 }
 
 .content_content-bar{
@@ -308,11 +309,11 @@ p{
 .content_content_close{
     display: flex;
     height: max-content;
-    margin: 20px 0;
+    padding: 0;
 }
 
 .content_content_close h2{
-    width: 50%;
+    width: 100%;
     height: max-content;
     color: #F95751;
     font-size: 40px;
@@ -336,9 +337,8 @@ p{
 }
 
 .content_content_open{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+    padding-top: 20px;
+    display: none;
 }
 
 .content_content-line-1{
@@ -409,6 +409,7 @@ p{
     overflow-y: hidden;
     border-radius: 10px;
     object-fit: cover;
+    transition: 0.3s;
 }
 
 .content_content-box-3{
@@ -418,6 +419,22 @@ p{
 
 .content_content-box-3 img{
     margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.content_content-box-3 img:hover{
+    box-shadow: 0 0 20px #302D2Daa;
+    transform: scale(95%);
+}
+
+.modaal-content-container{
+    height: max-content;
+    padding: 0;
+}
+
+.modaal-content-container img{
     width: 100%;
     border-radius: 10px;
 }
@@ -432,12 +449,9 @@ p{
 }
 
 @media screen and (max-width: 768px){
-    .content_content{
-        padding: 0;
-    }
-
+    
     .content_content_close h2{
-        width: 70%;
+        width: 100%;
         font-size: 28px;
     }
 
@@ -474,6 +488,10 @@ p{
 
     .content_content-box-4{
         padding: 0;
+    }
+
+    .content_content-box-4 p{
+        padding-bottom: 10px;
     }
 }
 

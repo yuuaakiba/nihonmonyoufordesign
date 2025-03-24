@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本文様</title>
+    <link rel="stylesheet" href="modaal.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/modaal.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -60,7 +64,7 @@
                 <div class="container">
                     <div class="content_content-bar"></div>
                     <div class="content_content">
-                        <div class="content_content_close">
+                        <div class="content_content_close" href="content_content01">
                             <h2>青海波<span>せいがいは</span></h2>
                         </div>
                         <div class="content_content_open">
@@ -86,7 +90,12 @@
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
                                         <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example01.png">
+                                        <a id="content_content-box-3-01" href="#content_content-box-3-01" class="modal-button">
+                                            <img src="images/example01.png">
+                                        </a>
+                                        <div id="content_content-box-3-01" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example01.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -135,8 +144,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example02.png">
+                                        <h3>作例<span>（出産祝いのはがき）</span></h3>
+                                        <a id="content_content-box-3-02" href="#content_content-box-3-02" class="modal-button">
+                                            <img src="images/example02.png">
+                                        </a>
+                                        <div id="content_content-box-3-02" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example02.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -185,8 +199,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example03.png">
+                                        <h3>作例<span>（プロジェクト企画のスライド）</span></h3>
+                                        <a id="content_content-box-3-03" href="#content_content-box-3-03" class="modal-button">
+                                            <img src="images/example03.png">
+                                        </a>
+                                        <div id="content_content-box-3-03" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example03.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -235,8 +254,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example04.png">
+                                        <h3>作例<span>（新商品企画などのスライド）</span></h3>
+                                        <a id="content_content-box-3-04" href="#content_content-box-3-04" class="modal-button">
+                                            <img src="images/example04.png">
+                                        </a>
+                                        <div id="content_content-box-3-04" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example04.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -285,8 +309,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example05.png">
+                                        <h3>作例<span>（神社などなにかを紹介するスライド）</span></h3>
+                                        <a id="content_content-box-3-05" href="#content_content-box-3-05" class="modal-button">
+                                            <img src="images/example05.png">
+                                        </a>
+                                        <div id="content_content-box-3-05" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example05.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -335,8 +364,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example06.png">
+                                        <h3>作例<span>（入社式など少しフォーマルな場でのスライド）</span></h3>
+                                        <a id="content_content-box-3-06" href="#content_content-box-3-06" class="modal-button">
+                                            <img src="images/example06.png">
+                                        </a>
+                                        <div id="content_content-box-3-06" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example06.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -385,8 +419,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example07.png">
+                                        <h3>作例<span>（自己紹介などラフな場のスライド）</span></h3>
+                                        <a id="content_content-box-3-07" href="#content_content-box-3-07" class="modal-button">
+                                            <img src="images/example07.png">
+                                        </a>
+                                        <div id="content_content-box-3-07" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example07.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -435,8 +474,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example08.png">
+                                        <h3>作例<span>（学校などのラフな場でのスライド）</span></h3>
+                                        <a id="content_content-box-3-08" href="#content_content-box-3-08" class="modal-button">
+                                            <img src="images/example08.png">
+                                        </a>
+                                        <div id="content_content-box-3-08" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example08.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -485,8 +529,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example09.png">
+                                        <h3>作例<span>（事業発足などフォーマルな場のスライド）</span></h3>
+                                        <a id="content_content-box-3-09" href="#content_content-box-3-09" class="modal-button">
+                                            <img src="images/example09.png">
+                                        </a>
+                                        <div id="content_content-box-3-09" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example09.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
@@ -535,8 +584,13 @@
                             <div class="content_content-line-2">
                                 <div class="content_content-box">
                                     <div class="content_content-box-3">
-                                        <h3>作例<span>（長寿祝いのはがき）</span></h3>
-                                        <img src="images/example10.png">
+                                        <h3>作例<span>（食事マナーなど高級感が出したい時のスライド）</span></h3>
+                                        <a id="content_content-box-3-10" href="#content_content-box-3-10" class="modal-button">
+                                            <img src="images/example10.png">
+                                        </a>
+                                        <div id="content_content-box-3-10" style="display: none;" class="content_content-box-3">
+                                            <img src="images/example10.png">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content_content-box">
